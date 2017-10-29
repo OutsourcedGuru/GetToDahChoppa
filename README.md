@@ -1,6 +1,8 @@
 # GetToDahChoppa
 An executable to generate multiple sub-jobs from indicated GCODE file, suitable for printing color-by-layer effects.
 
+![dsc_0199](https://user-images.githubusercontent.com/15971213/32146368-9e932a74-bc93-11e7-803b-1f4e6cbaf472.png)
+
 ## Overview
 This initial version works with the Cura slicer software. In subsequent versions, I may add support for other softwares but I would need access to GCODE examples first.
 
