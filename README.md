@@ -114,3 +114,8 @@ This should download everything required and build it for you. Assuming that you
 * Given the behavior of G29 autoleveling routines it is unwise to allow autoleveling on any of the sub-jobs because the nine-point testing should interfere with already-printed parts on the bed itself. For this reason I would strongly suggest toggling off autoleveling, per [OctoPrint-plugin-toggle-autolevel](https://github.com/OutsourcedGuru/OctoPrint-plugin-toggle-autolevel).
 * Additionally, it may be worth noting the current path(s) used during the printing of a priming line in the front of the printer so that the extruder assembly doesn't crash into your part. Proper placement of your part during slicing may be the best course of action here. Lastly, I would suggest that you remove each priming line as printed since each sub-job will attempt to recreate it.
 * You might consider installing [M117Popup](http://plugins.octoprint.org/plugins/M117PopUp/), [M117NavBar](http://plugins.octoprint.org/plugins/M117NavBar/) or [StatusLine](http://plugins.octoprint.org/plugins/status_line/) as well as [DisplayZ](http://plugins.octoprint.org/plugins/displayz/) while you're at it to take advantage of the `-msg` flag option of GetToDahChoppa.
+
+|Donate||Cryptocurrency|
+|:-----:|---|:--------:|
+| ![eth-receive](https://user-images.githubusercontent.com/15971213/40564950-932d4d10-601f-11e8-90f0-459f8b32f01c.png) || ![btc-receive](https://user-images.githubusercontent.com/15971213/40564971-a2826002-601f-11e8-8d5e-eeb35ab53300.png) |
+|Ethereum||Bitcoin|
