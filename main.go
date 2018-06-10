@@ -114,8 +114,8 @@ func main() {
 
 	// When finished, this should look like...                              /Users/user/Desktop/OriginalFilename_1of2.gcode
 	path, basefilename := filepath.Split(inputfilename)                    // OriginalFilename.gcode
-	basefilename = basefilename[0:strings.LastIndexAny(basefilename, ".")]	// OriginalFilename
-	outputfilename = fmt.Sprintf("%s%s_%dof%d%s", path, basefilename, *ordinal, *count, filepath.Ext(inputfilename))
+	basefilename =     basefilename[0:strings.LastIndexAny(basefilename, ".")]	// OriginalFilename
+	outputfilename =   fmt.Sprintf("%s%s_%dof%d%s", path, basefilename, *ordinal, *count, filepath.Ext(inputfilename))
 	// Attempt to create the output file
 	if (! *info) {
 		dataOut, err = os.Create(outputfilename)
@@ -149,7 +149,7 @@ func main() {
 						// ------------------------------------------------------------------------------
 						dataOut.WriteString("M117 ")
 						dataOut.WriteString(*msg)
-						dataOut.WriteString("\n\n")
+						dataOut.WriteString("\n")
 					}
 				}
 			}
@@ -175,7 +175,7 @@ func main() {
 					// ------------------------------------------------------------------------------
 					// Writing
 					// ------------------------------------------------------------------------------
-					dataOut.WriteString("M107\n\nM104 S0\n")
+					dataOut.WriteString("M107\nM82\nM104 S0\n")
 					dataOut.WriteString(line + "\n")
 				}
 			}
